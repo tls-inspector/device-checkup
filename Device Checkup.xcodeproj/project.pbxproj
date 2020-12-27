@@ -27,6 +27,9 @@
 		3C2CD54625955EDB004D84B2 /* SKTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2CD54425955EDB004D84B2 /* SKTest.m */; };
 		3C2CD54A25955EEB004D84B2 /* SKTestProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2CD54825955EEB004D84B2 /* SKTestProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C2CD54B25955EEB004D84B2 /* SKTestProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2CD54925955EEB004D84B2 /* SKTestProxy.m */; };
+		3C9DBABF259818DE00267C60 /* SKTestCertificateTrust.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBABD259818DE00267C60 /* SKTestCertificateTrust.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9DBAC0259818DE00267C60 /* SKTestCertificateTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */; };
+		3C9DBAC6259819D800267C60 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DBAC5259819D800267C60 /* Network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		3C2CD54425955EDB004D84B2 /* SKTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTest.m; sourceTree = "<group>"; };
 		3C2CD54825955EEB004D84B2 /* SKTestProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTestProxy.h; sourceTree = "<group>"; };
 		3C2CD54925955EEB004D84B2 /* SKTestProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTestProxy.m; sourceTree = "<group>"; };
+		3C9DBABD259818DE00267C60 /* SKTestCertificateTrust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTestCertificateTrust.h; sourceTree = "<group>"; };
+		3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTestCertificateTrust.m; sourceTree = "<group>"; };
+		3C9DBAC5259819D800267C60 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9DBAC6259819D800267C60 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +110,7 @@
 				3C2CD4E6259554FE004D84B2 /* Device Checkup */,
 				3C2CD50225955539004D84B2 /* SafetyKit */,
 				3C2CD4E5259554FE004D84B2 /* Products */,
+				3C9DBAC4259819D800267C60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,8 +161,18 @@
 				3C2CD54425955EDB004D84B2 /* SKTest.m */,
 				3C2CD54825955EEB004D84B2 /* SKTestProxy.h */,
 				3C2CD54925955EEB004D84B2 /* SKTestProxy.m */,
+				3C9DBABD259818DE00267C60 /* SKTestCertificateTrust.h */,
+				3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		3C9DBAC4259819D800267C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DBAC5259819D800267C60 /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2CD53C25955E27004D84B2 /* SKTestResult.h in Headers */,
+				3C9DBABF259818DE00267C60 /* SKTestCertificateTrust.h in Headers */,
 				3C2CD54525955EDB004D84B2 /* SKTest.h in Headers */,
 				3C2CD54A25955EEB004D84B2 /* SKTestProxy.h in Headers */,
 				3C2CD51725955714004D84B2 /* SafetyKit_PrefixHeader.pch in Headers */,
@@ -287,6 +306,7 @@
 			files = (
 				3C2CD54B25955EEB004D84B2 /* SKTestProxy.m in Sources */,
 				3C2CD53D25955E27004D84B2 /* SKTestResult.m in Sources */,
+				3C9DBAC0259818DE00267C60 /* SKTestCertificateTrust.m in Sources */,
 				3C2CD53525955E0F004D84B2 /* SKScanner.m in Sources */,
 				3C2CD5132595561C004D84B2 /* SKLogging.m in Sources */,
 				3C2CD54625955EDB004D84B2 /* SKTest.m in Sources */,

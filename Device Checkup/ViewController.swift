@@ -26,6 +26,6 @@ class ViewController: UIViewController, SKScannerDelegate {
     }
 
     func test(_ test: SKTest, finishedWith result: SKTestResult) {
-        print("Test \(test.testKey) finished!")
+        print("Test \(test.testKey) finished with result: \(result.description)")
     }
 }

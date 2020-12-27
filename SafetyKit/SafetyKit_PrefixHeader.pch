@@ -3,7 +3,7 @@
 
 #include "SKLogging.h"
 
-#define Console CKLogging.sharedInstance
+#define Console SKLogging.sharedInstance
 #define PDebug(format, ...) [Console writeDebug:[NSString stringWithFormat:(format), ##__VA_ARGS__]]
 #define PWarn(format, ...) [Console writeWarn:[NSString stringWithFormat:(format), ##__VA_ARGS__]]
 #define PError(format, ...) [Console writeError:[NSString stringWithFormat:(format), ##__VA_ARGS__]]
@@ -11,5 +11,6 @@
 #define MAKE_ERROR(ECODE, EDESCRIPTION) [NSError errorWithDomain:@"com.tlsinspector.SafetyKit" code:ECODE userInfo:@{NSLocalizedDescriptionKey: EDESCRIPTION}]
 
 #define TEST_KEY_PROXY @"test_proxy"
+#define TEST_KEY_CERTIFICATE_TRUST @"test_certificate_trust"
 
 #endif

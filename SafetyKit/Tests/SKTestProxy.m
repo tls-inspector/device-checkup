@@ -39,7 +39,7 @@
         return;
     }
 
-    finished([SKTestResult failResultWithDescriptionKey:@"test_proxy_not_found"]);
+    finished([SKTestResult passResultWithDescriptionKey:@"test_proxy_not_found"]);
 }
 
 @end

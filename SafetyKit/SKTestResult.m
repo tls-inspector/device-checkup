@@ -25,27 +25,58 @@
 
 + (SKTestResult * _Nonnull) failResultWithDescriptionKey:(NSString * _Nonnull)descriptionKey {
     SKTestResult * result = [SKTestResult new];
+    result.resultType = RESULT_TYPE_FAIL;
+    result.localizedDescriptionKey = descriptionKey;
     return result;
 }
 
 + (SKTestResult * _Nonnull) warnResultWithDescriptionKey:(NSString * _Nonnull)descriptionKey {
     SKTestResult * result = [SKTestResult new];
+    result.resultType = RESULT_TYPE_WARN;
+    result.localizedDescriptionKey = descriptionKey;
     return result;
 }
 
 + (SKTestResult * _Nonnull) passResultWithDescriptionKey:(NSString * _Nullable)descriptionKey {
     SKTestResult * result = [SKTestResult new];
+    result.resultType = RESULT_TYPE_PASS;
+    result.localizedDescriptionKey = descriptionKey;
     return result;
 }
 
 + (SKTestResult * _Nonnull) unknownResult {
     SKTestResult * result = [SKTestResult new];
+    result.resultType = RESULT_TYPE_UNKNOWN;
     return result;
 }
 
 + (SKTestResult * _Nonnull) errorResult:(NSError * _Nonnull)error {
     SKTestResult * result = [SKTestResult new];
+    result.resultType = RESULT_TYPE_ERROR;
+    result.error = error;
     return result;
+}
+
+- (NSString *) description {
+    NSString * state = @"";
+    switch (self.resultType) {
+        case RESULT_TYPE_FAIL:
+            state = @"FAIL";
+            break;
+        case RESULT_TYPE_WARN:
+            state = @"WARN";
+            break;
+        case RESULT_TYPE_PASS:
+            state = @"PASS";
+            break;
+        case RESULT_TYPE_UNKNOWN:
+            state = @"UNKNOWN";
+            break;
+        case RESULT_TYPE_ERROR:
+            state = @"ERROR";
+            break;
+    }
+    return [[NSString alloc] initWithFormat:@"%@ - %@", state, self.localizedDescriptionKey];
 }
 
 @end

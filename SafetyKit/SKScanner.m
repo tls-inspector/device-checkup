@@ -35,6 +35,7 @@
     scanner.delegate = delegate;
     scanner.tests = @[
         [SKTestProxy new],
+        [SKTestCertificateTrust new],
     ];
     scanner.currentTestIdx = -1;
     return scanner;

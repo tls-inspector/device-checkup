@@ -1,5 +1,5 @@
 //
-//  SafetyKit.h
+//  SKTestCertificateTrust.h
 //
 //  LGPLv3
 //
@@ -19,24 +19,10 @@
 //  You should have received a copy of the GNU Lesser Public License
 //  along with this library.  If not, see <https://www.gnu.org/licenses/>.
 
-#import <UIKit/UIKit.h>
+NS_ASSUME_NONNULL_BEGIN
 
-//! Project version number for SafetyKit.
-FOUNDATION_EXPORT double SafetyKitVersionNumber;
-
-//! Project version string for SafetyKit.
-FOUNDATION_EXPORT const unsigned char SafetyKitVersionString[];
-
-#import <SafetyKit/SKLogging.h>
-#import <SafetyKit/SKTestResult.h>
-#import <SafetyKit/SKTest.h>
-#import <SafetyKit/SKTestProxy.h>
-#import <SafetyKit/SKTestCertificateTrust.h>
-#import <SafetyKit/SKScanner.h>
-
-/**
- Interface for global SafetyKit methods.
- */
-@interface SafetyKit : NSObject
+@interface SKTestCertificateTrust : SKTest
 
 @end
+
+NS_ASSUME_NONNULL_END
