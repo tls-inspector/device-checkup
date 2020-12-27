@@ -12,5 +12,6 @@
 
 #define TEST_KEY_PROXY @"test_proxy"
 #define TEST_KEY_CERTIFICATE_TRUST @"test_certificate_trust"
+#define TEST_KEY_LOCAL_AUTHENTICATION @"test_local_authentication"
 
 #endif

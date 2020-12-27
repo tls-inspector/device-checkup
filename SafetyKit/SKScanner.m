@@ -34,6 +34,7 @@
     SKScanner * scanner = [SKScanner new];
     scanner.delegate = delegate;
     scanner.tests = @[
+        [SKTestLocalAuthentication new],
         [SKTestProxy new],
         [SKTestCertificateTrust new],
     ];

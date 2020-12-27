@@ -30,6 +30,9 @@
 		3C9DBABF259818DE00267C60 /* SKTestCertificateTrust.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBABD259818DE00267C60 /* SKTestCertificateTrust.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C9DBAC0259818DE00267C60 /* SKTestCertificateTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */; };
 		3C9DBAC6259819D800267C60 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DBAC5259819D800267C60 /* Network.framework */; };
+		3C9DBAC925981EC200267C60 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DBAC825981EC200267C60 /* LocalAuthentication.framework */; };
+		3C9DBACC25981ED100267C60 /* SKTestLocalAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBACA25981ED100267C60 /* SKTestLocalAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9DBACD25981ED100267C60 /* SKTestLocalAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBACB25981ED100267C60 /* SKTestLocalAuthentication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		3C9DBABD259818DE00267C60 /* SKTestCertificateTrust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTestCertificateTrust.h; sourceTree = "<group>"; };
 		3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTestCertificateTrust.m; sourceTree = "<group>"; };
 		3C9DBAC5259819D800267C60 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		3C9DBAC825981EC200267C60 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		3C9DBACA25981ED100267C60 /* SKTestLocalAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTestLocalAuthentication.h; sourceTree = "<group>"; };
+		3C9DBACB25981ED100267C60 /* SKTestLocalAuthentication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTestLocalAuthentication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9DBAC925981EC200267C60 /* LocalAuthentication.framework in Frameworks */,
 				3C9DBAC6259819D800267C60 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +170,8 @@
 				3C2CD54925955EEB004D84B2 /* SKTestProxy.m */,
 				3C9DBABD259818DE00267C60 /* SKTestCertificateTrust.h */,
 				3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */,
+				3C9DBACA25981ED100267C60 /* SKTestLocalAuthentication.h */,
+				3C9DBACB25981ED100267C60 /* SKTestLocalAuthentication.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -170,6 +179,7 @@
 		3C9DBAC4259819D800267C60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C9DBAC825981EC200267C60 /* LocalAuthentication.framework */,
 				3C9DBAC5259819D800267C60 /* Network.framework */,
 			);
 			name = Frameworks;
@@ -188,6 +198,7 @@
 				3C2CD54A25955EEB004D84B2 /* SKTestProxy.h in Headers */,
 				3C2CD51725955714004D84B2 /* SafetyKit_PrefixHeader.pch in Headers */,
 				3C2CD5122595561C004D84B2 /* SKLogging.h in Headers */,
+				3C9DBACC25981ED100267C60 /* SKTestLocalAuthentication.h in Headers */,
 				3C2CD50525955539004D84B2 /* SafetyKit.h in Headers */,
 				3C2CD53425955E0F004D84B2 /* SKScanner.h in Headers */,
 			);
@@ -307,6 +318,7 @@
 				3C2CD54B25955EEB004D84B2 /* SKTestProxy.m in Sources */,
 				3C2CD53D25955E27004D84B2 /* SKTestResult.m in Sources */,
 				3C9DBAC0259818DE00267C60 /* SKTestCertificateTrust.m in Sources */,
+				3C9DBACD25981ED100267C60 /* SKTestLocalAuthentication.m in Sources */,
 				3C2CD53525955E0F004D84B2 /* SKScanner.m in Sources */,
 				3C2CD5132595561C004D84B2 /* SKLogging.m in Sources */,
 				3C2CD54625955EDB004D84B2 /* SKTest.m in Sources */,
@@ -467,7 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCW84NC7Y8;
 				INFOPLIST_FILE = "Device Checkup/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCW84NC7Y8;
 				INFOPLIST_FILE = "Device Checkup/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +526,7 @@
 				GCC_PREFIX_HEADER = SafetyKit/SafetyKit_PrefixHeader.pch;
 				INFOPLIST_FILE = SafetyKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +556,7 @@
 				GCC_PREFIX_HEADER = SafetyKit/SafetyKit_PrefixHeader.pch;
 				INFOPLIST_FILE = SafetyKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

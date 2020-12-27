@@ -30,7 +30,7 @@
     return self;
 }
 
-- (void) run:(void (^)(SKTestResult * _Nonnull))finished API_AVAILABLE(ios(12.0)) {
+- (void) run:(void (^)(SKTestResult * _Nonnull))finished {
     nw_endpoint_t endpoint = nw_endpoint_create_host("appleid.apple.com", "443");
     dispatch_queue_t nw_dispatch_queue = dispatch_queue_create("com.tlsinspector.SafetyKit", NULL);
 
