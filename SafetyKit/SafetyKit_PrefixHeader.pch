@@ -10,4 +10,6 @@
 
 #define MAKE_ERROR(ECODE, EDESCRIPTION) [NSError errorWithDomain:@"com.tlsinspector.SafetyKit" code:ECODE userInfo:@{NSLocalizedDescriptionKey: EDESCRIPTION}]
 
+#define TEST_KEY_PROXY @"test_proxy"
+
 #endif

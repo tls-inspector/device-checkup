@@ -17,6 +17,14 @@ class ViewController: UIViewController, SKScannerDelegate {
         print("Scanner finished all tests")
     }
 
+    func scannerDidStart(_ test: SKTest) {
+        print("Scanner did start test \(test.testKey)")
+    }
+
+    func scannerDidStart() {
+        print("Scanner started")
+    }
+
     func test(_ test: SKTest, finishedWith result: SKTestResult) {
         print("Test \(test.testKey) finished!")
     }
