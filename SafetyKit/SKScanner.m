@@ -37,6 +37,7 @@
         [SKTestLocalAuthentication new],
         [SKTestProxy new],
         [SKTestCertificateTrust new],
+        [SKTestJailbreak new],
     ];
     scanner.currentTestIdx = -1;
     return scanner;

@@ -33,6 +33,8 @@
 		3C9DBAC925981EC200267C60 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9DBAC825981EC200267C60 /* LocalAuthentication.framework */; };
 		3C9DBACC25981ED100267C60 /* SKTestLocalAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBACA25981ED100267C60 /* SKTestLocalAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C9DBACD25981ED100267C60 /* SKTestLocalAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBACB25981ED100267C60 /* SKTestLocalAuthentication.m */; };
+		3C9DBAD42598218C00267C60 /* SKTestJailbreak.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DBAD22598218C00267C60 /* SKTestJailbreak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9DBAD52598218C00267C60 /* SKTestJailbreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DBAD32598218C00267C60 /* SKTestJailbreak.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		3C9DBAC825981EC200267C60 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		3C9DBACA25981ED100267C60 /* SKTestLocalAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTestLocalAuthentication.h; sourceTree = "<group>"; };
 		3C9DBACB25981ED100267C60 /* SKTestLocalAuthentication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTestLocalAuthentication.m; sourceTree = "<group>"; };
+		3C9DBAD22598218C00267C60 /* SKTestJailbreak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTestJailbreak.h; sourceTree = "<group>"; };
+		3C9DBAD32598218C00267C60 /* SKTestJailbreak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTestJailbreak.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 				3C9DBABE259818DE00267C60 /* SKTestCertificateTrust.m */,
 				3C9DBACA25981ED100267C60 /* SKTestLocalAuthentication.h */,
 				3C9DBACB25981ED100267C60 /* SKTestLocalAuthentication.m */,
+				3C9DBAD22598218C00267C60 /* SKTestJailbreak.h */,
+				3C9DBAD32598218C00267C60 /* SKTestJailbreak.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9DBAD42598218C00267C60 /* SKTestJailbreak.h in Headers */,
 				3C2CD53C25955E27004D84B2 /* SKTestResult.h in Headers */,
 				3C9DBABF259818DE00267C60 /* SKTestCertificateTrust.h in Headers */,
 				3C2CD54525955EDB004D84B2 /* SKTest.h in Headers */,
@@ -322,6 +329,7 @@
 				3C2CD53525955E0F004D84B2 /* SKScanner.m in Sources */,
 				3C2CD5132595561C004D84B2 /* SKLogging.m in Sources */,
 				3C2CD54625955EDB004D84B2 /* SKTest.m in Sources */,
+				3C9DBAD52598218C00267C60 /* SKTestJailbreak.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
